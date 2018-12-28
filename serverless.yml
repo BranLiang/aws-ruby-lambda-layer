@@ -4,7 +4,7 @@ provider:
 
 layers:
   pgRuby25:
-    path: layer/ruby
+    path: layer
     description: A Layer to fix postgres support in Ruby 2.5 Lambda functions
     compatibleRuntimes:
       - ruby2.5
