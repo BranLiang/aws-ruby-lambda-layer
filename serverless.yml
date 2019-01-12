@@ -1,10 +1,10 @@
-service: ruby-pg-layers
+service: lambda-layers-gem
 provider:
   name: aws
 
 layers:
-  pgRuby25:
+  gemPacks:
     path: layer
-    description: A Layer to fix postgres support in Ruby 2.5 Lambda functions
+    description: A Layer with common ruby gems.
     compatibleRuntimes:
       - ruby2.5
