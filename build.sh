@@ -2,7 +2,7 @@
 
 set -e
 
-rm -rf layer && mkdir -p layer/lib && mkdir -p layer/gems
+rm -rf layer && mkdir -p layer/lib && mkdir -p layer/ruby/gems
 
 docker build -t ruby25-pg-builder -f Dockerfile .
 
@@ -14,6 +14,6 @@ docker cp \
 
 docker cp \
     $CONTAINER:/var/task/vendor/bundle/ruby/2.5.0 \
-    layer/gems/2.5.0
+    layer/ruby/gems/2.5.0
 
 docker rm $CONTAINER
