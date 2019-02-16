@@ -33,6 +33,9 @@ GEM
       aws-sdk-core (~> 3, >= 3.39.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.0)
+    aws-sdk-sqs (1.10.0)
+      aws-sdk-core (~> 3, >= 3.39.0)
+      aws-sigv4 (~> 1.0)
     aws-sigv4 (1.0.3)
     concurrent-ruby (1.1.4)
     connection_pool (2.2.2)
@@ -75,6 +78,7 @@ DEPENDENCIES
   aws-sdk-firehose
   aws-sdk-lambda
   aws-sdk-s3
+  aws-sdk-sqs
   dotenv
   httparty
   json
