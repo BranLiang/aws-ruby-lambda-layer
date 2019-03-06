@@ -1,6 +1,10 @@
 # Ruby Lambda Layer
 This Repo shows how to include ruby native gems
 
+## Attention
+
+It is generally a bad practice using api directly in the aws lambda. As it will consume too much connections very quickly.
+
 ## How to use
 
 build files

@@ -11,6 +11,7 @@ gem 'dotenv'
 gem 'httparty'
 gem 'sidekiq'
 gem 'redis'
+gem 'sentry-raven'
 
 # aws
 gem 'aws-sdk-firehose'

@@ -40,6 +40,8 @@ GEM
     concurrent-ruby (1.1.4)
     connection_pool (2.2.2)
     dotenv (2.6.0)
+    faraday (0.15.4)
+      multipart-post (>= 1.2, < 3)
     httparty (0.16.3)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
@@ -52,6 +54,7 @@ GEM
     mime-types-data (3.2018.0812)
     minitest (5.11.3)
     multi_xml (0.6.0)
+    multipart-post (2.0.0)
     pg (1.1.4)
     rack (2.0.6)
     rack-contrib (2.1.0)
@@ -60,6 +63,8 @@ GEM
       rack
     rake (12.3.2)
     redis (4.1.0)
+    sentry-raven (2.9.0)
+      faraday (>= 0.7.6, < 1.0)
     sequel (5.16.0)
     sidekiq (5.2.5)
       connection_pool (~> 2.2, >= 2.2.2)
@@ -87,6 +92,7 @@ DEPENDENCIES
   rack-contrib
   rake
   redis
+  sentry-raven
   sequel
   sidekiq
 
