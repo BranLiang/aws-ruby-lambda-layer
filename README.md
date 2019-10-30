@@ -10,17 +10,31 @@ It is generally a bad practice using api directly in the aws lambda. As it will 
 build files
 
 ```shell
-./build
+$ ./build.sh
 ```
 
 deploy to aws
 
 ```shell
-sls deploy
+$ sls deploy
 ```
 
 Then see [the docs](https://serverless.com/framework/docs/providers/aws/guide/functions/#layers)
 and configure your lambda to use the layer you just published.
+
+or 
+
+deploy manually via aws cli
+
+```shell
+$ cd layer
+$ zip -r layer.zip ./lib ./ruby/ -x ./ruby/2.5.0/cache/\*
+$ aws lambda publish-layer-version \
+         --layer-name ruby-kubectl-pg \
+         --region us-east-1 \
+         --compatible-runtimes ruby2.5 \
+         --zip-file fileb://layer.zip
+```
 
 ## Gems included
 ```Gemfile
