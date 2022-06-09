@@ -47,7 +47,7 @@ GEM
       multi_xml (>= 0.5.2)
     i18n (1.5.1)
       concurrent-ruby (~> 1.0)
-    jmespath (1.4.0)
+    jmespath (1.6.1)
     json (2.3.0)
     mime-types (3.2.2)
       mime-types-data (~> 3.2015)
