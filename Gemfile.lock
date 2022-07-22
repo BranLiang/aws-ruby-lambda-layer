@@ -72,7 +72,7 @@ GEM
       rack-protection (>= 1.5.0)
       redis (>= 3.3.5, < 5)
     thread_safe (0.3.6)
-    tzinfo (1.2.5)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
 
 PLATFORMS
